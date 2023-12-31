@@ -1,0 +1,101 @@
+
+.thumbnails{
+    width: 100%;
+    display: block;
+}
+.search{
+    display: block;
+}
+.author{
+    width: 300px;
+    
+}
+.title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.stats{
+ width: 300px;   
+}
+.video-preview{
+    /* display: inline-block; */
+    width: 100%;
+    /* vertical-align: top;
+    margin-right: 15px; */
+
+}
+.channelpicture{
+    /* display: inline-block; */
+    width: 100%;
+    /* vertical-align: top; */
+}
+.profile1{
+    width: 100%;
+}
+.profile2{
+    width: 100%;
+    border-radius: 25px;
+}
+.video-info{
+    /* display: inline-block;
+    width: 200px; */
+}
+.video-thumbnail{
+    margin-bottom: 12px;
+    position: relative;
+}
+.video-time{
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    background-color: black;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: bold;
+    /* padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px; */
+    /* clean approach */
+    /* padding: 2px 3px 4px 4px; */
+    /* starts from top and then clockwise similar for margin  */
+    padding: 4px;
+    border-radius: 2px;
+}
+.author,.stats{
+    font-size: 12px;
+    color: rgb(96,96, 96);
+}
+.author{
+    margin-bottom: 4px;
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media(max-width: 1000px){
+.video-grid{
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media(min-width: 1400px)
+{
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
